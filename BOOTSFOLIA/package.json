@@ -1,0 +1,16 @@
+{
+  "name": "bootsfolia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --no-cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wow.js": "^1.2.2",
+    "wowjs": "^1.1.3"
+  }
+}

@@ -1,0 +1,32 @@
+/* font-family: "BigNoodleTitling"; */
+@font-face {
+    font-family: "BigNoodleTitling";
+    src: url("/BigNoodleTitling.9dfc2b64.eot");
+    src: url("/BigNoodleTitling.9dfc2b64.eot?#iefix")format("embedded-opentype"),
+        url("/BigNoodleTitling.52c82368.woff") format("woff"),
+        url("/BigNoodleTitling.c00c66ac.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('/MyriadPro-Regular.14a0bb03.eot');
+    src: url('/MyriadPro-Regular.14a0bb03.eot?#iefix') format('embedded-opentype'),
+        url('/MyriadPro-Regular.cd157974.woff') format('woff'),
+        url('/MyriadPro-Regular.b3dfbe58.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MgOpenModata';
+    src: url('/MgOpenModata.bd73d665.eot');
+    src: url('/MgOpenModata.bd73d665.eot?#iefix') format('embedded-opentype'),
+        url('/MgOpenModata.475687d3.woff') format('woff'),
+        url('/MgOpenModata.43999974.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*# sourceMappingURL=/fonts.e5d571d2.css.map */
