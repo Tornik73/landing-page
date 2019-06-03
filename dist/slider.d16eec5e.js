@@ -136,7 +136,7 @@ $(document).ready(function () {
       nextImage.addClass('curry');
     }
 
-    timer = 10000;
+    timer = 20000;
   });
   $('.left-arrow').click(function () {
     var currentImage = $('.cetate.curry');
@@ -147,7 +147,7 @@ $(document).ready(function () {
     currentImage.removeClass('curry');
     prevImage.fadeIn(1000);
     prevImage.addClass('curry');
-    timer = 10000;
+    timer = 20000;
   });
   setInterval(function () {
     var currentImage = $('.cetate.curry');
@@ -189,7 +189,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49665" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50217" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

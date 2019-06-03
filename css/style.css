@@ -61,7 +61,7 @@ body {
     padding-top: 325px;
     display: flex;
     position: relative;
-    z-index: 9999;
+    z-index: 9000;
 }
 
 .slider-image {
@@ -81,7 +81,8 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    padding-left: 15%;
+    padding: 0 1% 0 15%;
+    z-index: 9999;
 }
 
 .left-arrow img {
@@ -94,12 +95,12 @@ body {
 }
 
 .right-arrow {
-    /* margin-right: 65px; */
     position: absolute;
     height: 100%;
     top: 0;
     right: 0;
-    padding-right: 15%;
+    padding: 0 15% 0 1%;
+    z-index: 9999;
 }
 
 .right-arrow img {
@@ -165,11 +166,11 @@ body {
     font-weight: 100;
 }
 
+
 .scroll a {
     margin-top: 370px;
     display: flex;
     flex-direction: column;
-    -ms-align-items: center;
     align-items: center;
     text-decoration: none;
 }
@@ -184,7 +185,7 @@ body {
 
 /*About Us*/
 
-.about-us {
+#about-us {
     background-color: #fff;
     margin-bottom: 120px;
 }
@@ -320,11 +321,11 @@ body {
 }
 
 /*Our Works*/
-.ourWorks__menu {
+.our-works__menu {
     margin: 86px auto 36px;
 }
 
-.ourWorks__menu ul li {
+.our-works__menu ul li {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     margin-right: 48px;
@@ -333,7 +334,7 @@ body {
 
 }
 
-.ourWorks__menu a {
+.our-works__menu a {
     text-decoration: none;
     font-size: 14px;
     color: rgb(61, 61, 61);
@@ -341,14 +342,14 @@ body {
 
 }
 
-.ourWorks .active {
+.ourWorks__element .active {
     position: relative;
     margin-right: 20px;
     color: rgb(61, 61, 61);
     font-weight: bold;
 }
 
-.ourWorks .active::after {
+.ourWorks__element .active::after {
     content: "";
     position: absolute;
     width: 98%;
@@ -360,31 +361,44 @@ body {
 
 /*Our works slider blocks*/
 
-.ourWorks__slider {
+.our-works__slider {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
-.ourWorks__block-large {
-    /* height: 280px; */
+.our-works__block-large {
     flex-basis: 40%;
     height: 280px;
     border: 1px solid #ed7468;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
     background-color: #e84c3d;
 }
 
-.ourWorks__block-sm {
+.our-works__block-sm {
     flex-basis: 20%;
     height: 280px;
+    overflow: hidden;
     border: 1px solid #ed7468;
     background-color: #e84c3d;
 }
 
-.ourWorks__block-sm img {
+.our-works__block-sm img {
     height: 100%;
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }
 
 /*Our works themes*/
@@ -418,11 +432,11 @@ body {
 
 /*Who We Are*/
 
-.WhoWeAre .title-orange h2 {
+.who-we-are .title-orange h2 {
     letter-spacing: 7px;
 }
 
-.WhoWeAre .title-orange h2::after {
+.who-we-are .title-orange h2::after {
     width: 68%;
     left: 43px;
 }
@@ -461,8 +475,12 @@ body {
 }
 
 .person__slider {
-    margin-left: 7px;
+    margin: 0 auto;
     width: 100px;
+}
+
+.person-photo__circle {
+    /* border-radius: ; */
 }
 
 .person__slider input[type="radio"] {
@@ -835,7 +853,7 @@ input[type="text"]:focus {
     margin-bottom: 84px;
 }
 
-.LocateOnMap {
+.locate-on-map {
     background-color: #0c1215;
     text-align: center;
     display: flex;
@@ -848,7 +866,7 @@ input[type="text"]:focus {
     align-items: center;
 }
 
-.LocateOnMap a {
+.locate-on-map a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;

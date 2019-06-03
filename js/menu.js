@@ -48,7 +48,9 @@ let navigation = {
                 }
             } else {
                 self.closeNavigation();
+                scroll_to();
             }
+
         });
 
         self.$navTrigger2.addEventListener('click', (e) => {
@@ -88,6 +90,7 @@ let navigation = {
 
                 // Transition the page
                 self.transitionPage();
+                this.click();
             });
         });
     },
@@ -171,3 +174,21 @@ let navigation = {
 }
 
 navigation.init();
+
+$(document).ready(function () {
+    $(".nav__list").on("click", "a", function (event) {
+        // console.log(this);
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор блока с атрибута href
+        let id = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top + 100;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({
+            scrollTop: top
+        }, 1500);
+    });
+});

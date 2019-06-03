@@ -161,6 +161,7 @@ var navigation = {
         }
       } else {
         self.closeNavigation();
+        scroll_to();
       }
     });
     self.$navTrigger2.addEventListener('click', function (e) {
@@ -195,6 +196,7 @@ var navigation = {
         this.classList.add('is-active'); // Transition the page
 
         self.transitionPage();
+        this.click();
       });
     });
   },
@@ -263,6 +265,21 @@ var navigation = {
   }
 };
 navigation.init();
+$(document).ready(function () {
+  $(".nav__list").on("click", "a", function (event) {
+    // console.log(this);
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault(); //забираем идентификатор блока с атрибута href
+
+    var id = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top + 100; //анимируем переход на расстояние - top за 1500 мс
+
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+});
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -291,7 +308,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49665" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50217" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

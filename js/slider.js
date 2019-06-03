@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var timer = 5000;
+  let timer = 5000;
   $('.right-arrow').click(function () {
     var currentImage = $('.cetate.curry');
     var currentImageIndex = $('.cetate.curry').index();
@@ -16,7 +16,7 @@ $(document).ready(function () {
       nextImage.addClass('curry');
 
     }
-    timer = 10000;
+    timer = 20000;
   });
 
   $('.left-arrow').click(function () {
@@ -29,7 +29,7 @@ $(document).ready(function () {
     currentImage.removeClass('curry');
     prevImage.fadeIn(1000);
     prevImage.addClass('curry');
-    timer = 10000;
+    timer = 20000;
   });
   setInterval(function () {
     var currentImage = $('.cetate.curry');

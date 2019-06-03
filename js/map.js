@@ -1,7 +1,7 @@
  $(document).ready(function () {
      $(".LocateOnMap-title").on("click", "a", function (event) {
          event.preventDefault();
-         var id = $(this).attr('href'),
+         let id = $(this).attr('href'),
              top = $(id).offset().top;
          $('body,html').animate({
              scrollTop: top
@@ -11,7 +11,7 @@
  $(document).ready(function () {
      $(".right-arrow").on("click", "a", function (event) {
          event.preventDefault();
-         var id = $(this).attr('href'),
+         let id = $(this).attr('href'),
              top = $(id).offset().top;
          $('body,html').animate({
              scrollTop: top
@@ -21,7 +21,7 @@
  $(document).ready(function () {
      $(".left-arrow").on("click", "a", function (event) {
          event.preventDefault();
-         var id = $(this).attr('href'),
+         let id = $(this).attr('href'),
              top = $(id).offset().top;
          $('body,html').animate({
              scrollTop: top
