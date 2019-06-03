@@ -119,6 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/slider.js":[function(require,module,exports) {
 $(document).ready(function () {
+  var timer = 5000;
   $('.right-arrow').click(function () {
     var currentImage = $('.cetate.curry');
     var currentImageIndex = $('.cetate.curry').index();
@@ -134,6 +135,8 @@ $(document).ready(function () {
       nextImage.fadeIn(1000);
       nextImage.addClass('curry');
     }
+
+    timer = 10000;
   });
   $('.left-arrow').click(function () {
     var currentImage = $('.cetate.curry');
@@ -144,9 +147,21 @@ $(document).ready(function () {
     currentImage.removeClass('curry');
     prevImage.fadeIn(1000);
     prevImage.addClass('curry');
+    timer = 10000;
   });
+  setInterval(function () {
+    var currentImage = $('.cetate.curry');
+    var currentImageIndex = $('.cetate.curry').index();
+    var prevImageIndex = currentImageIndex - 1;
+    var prevImage = $('.cetate').eq(prevImageIndex);
+    currentImage.fadeOut(1000);
+    currentImage.removeClass('curry');
+    prevImage.fadeIn(1000);
+    prevImage.addClass('curry');
+    timer = 5000;
+  }, timer);
 });
-},{}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -174,7 +189,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54666" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49665" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -349,5 +364,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/slider.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/slider.js"], null)
 //# sourceMappingURL=/slider.d16eec5e.js.map

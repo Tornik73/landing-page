@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/fonts.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/fonts.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\BigNoodleTitling\\BigNoodleTitling.eot":[["BigNoodleTitling.9dfc2b64.eot","fonts/BigNoodleTitling/BigNoodleTitling.eot"],"fonts/BigNoodleTitling/BigNoodleTitling.eot"],"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\BigNoodleTitling\\BigNoodleTitling.woff":[["BigNoodleTitling.52c82368.woff","fonts/BigNoodleTitling/BigNoodleTitling.woff"],"fonts/BigNoodleTitling/BigNoodleTitling.woff"],"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\BigNoodleTitling\\BigNoodleTitling.ttf":[["BigNoodleTitling.c00c66ac.ttf","fonts/BigNoodleTitling/BigNoodleTitling.ttf"],"fonts/BigNoodleTitling/BigNoodleTitling.ttf"],"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\Myriad Pro Regular\\MyriadPro-Regular.eot":[["MyriadPro-Regular.14a0bb03.eot","fonts/Myriad Pro Regular/MyriadPro-Regular.eot"],"fonts/Myriad Pro Regular/MyriadPro-Regular.eot"],"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\Myriad Pro Regular\\MyriadPro-Regular.woff":[["MyriadPro-Regular.cd157974.woff","fonts/Myriad Pro Regular/MyriadPro-Regular.woff"],"fonts/Myriad Pro Regular/MyriadPro-Regular.woff"],"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\Myriad Pro Regular\\MyriadPro-Regular.ttf":[["MyriadPro-Regular.b3dfbe58.ttf","fonts/Myriad Pro Regular/MyriadPro-Regular.ttf"],"fonts/Myriad Pro Regular/MyriadPro-Regular.ttf"],"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\MgOpenModata\\MgOpenModata.eot":[["MgOpenModata.bd73d665.eot","fonts/MgOpenModata/MgOpenModata.eot"],"fonts/MgOpenModata/MgOpenModata.eot"],"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\MgOpenModata\\MgOpenModata.woff":[["MgOpenModata.475687d3.woff","fonts/MgOpenModata/MgOpenModata.woff"],"fonts/MgOpenModata/MgOpenModata.woff"],"D:\\Code\\Portfolio\\Sites\\GitPortfolio\\portfolio\\BOOTSFOLIA\\fonts\\MgOpenModata\\MgOpenModata.ttf":[["MgOpenModata.43999974.ttf","fonts/MgOpenModata/MgOpenModata.ttf"],"fonts/MgOpenModata/MgOpenModata.ttf"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\BigNoodleTitling\\BigNoodleTitling.eot":[["BigNoodleTitling.9dfc2b64.eot","fonts/BigNoodleTitling/BigNoodleTitling.eot"],"fonts/BigNoodleTitling/BigNoodleTitling.eot"],"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\BigNoodleTitling\\BigNoodleTitling.woff":[["BigNoodleTitling.52c82368.woff","fonts/BigNoodleTitling/BigNoodleTitling.woff"],"fonts/BigNoodleTitling/BigNoodleTitling.woff"],"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\BigNoodleTitling\\BigNoodleTitling.ttf":[["BigNoodleTitling.c00c66ac.ttf","fonts/BigNoodleTitling/BigNoodleTitling.ttf"],"fonts/BigNoodleTitling/BigNoodleTitling.ttf"],"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\Myriad Pro Regular\\MyriadPro-Regular.eot":[["MyriadPro-Regular.14a0bb03.eot","fonts/Myriad Pro Regular/MyriadPro-Regular.eot"],"fonts/Myriad Pro Regular/MyriadPro-Regular.eot"],"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\Myriad Pro Regular\\MyriadPro-Regular.woff":[["MyriadPro-Regular.cd157974.woff","fonts/Myriad Pro Regular/MyriadPro-Regular.woff"],"fonts/Myriad Pro Regular/MyriadPro-Regular.woff"],"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\Myriad Pro Regular\\MyriadPro-Regular.ttf":[["MyriadPro-Regular.b3dfbe58.ttf","fonts/Myriad Pro Regular/MyriadPro-Regular.ttf"],"fonts/Myriad Pro Regular/MyriadPro-Regular.ttf"],"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\MgOpenModata\\MgOpenModata.eot":[["MgOpenModata.bd73d665.eot","fonts/MgOpenModata/MgOpenModata.eot"],"fonts/MgOpenModata/MgOpenModata.eot"],"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\MgOpenModata\\MgOpenModata.woff":[["MgOpenModata.475687d3.woff","fonts/MgOpenModata/MgOpenModata.woff"],"fonts/MgOpenModata/MgOpenModata.woff"],"C:\\Users\\Admin\\Documents\\bootsfolia\\landing-page\\fonts\\MgOpenModata\\MgOpenModata.ttf":[["MgOpenModata.43999974.ttf","fonts/MgOpenModata/MgOpenModata.ttf"],"fonts/MgOpenModata/MgOpenModata.ttf"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54666" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49665" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -392,5 +392,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/fonts.e5d571d2.js.map
