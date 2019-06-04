@@ -1,5 +1,6 @@
-# Bootsfolia landging
+# Rocket Dev. landging
 
 command to start project:
 
 npm start
+
