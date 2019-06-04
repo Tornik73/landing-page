@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var navigation = {
   // Variables
   $navTrigger: document.querySelector('.nav__trigger', '.bars_trigger'),
-  $navTrigger2: document.querySelector('.menu'),
+  $navTrigger2: document.querySelector('.logo-menu'),
   $nav: document.querySelector('.nav'),
   $navItems: document.querySelectorAll('.nav__item a'),
   $main: document.querySelector('.main'),
@@ -161,7 +161,6 @@ var navigation = {
         }
       } else {
         self.closeNavigation();
-        scroll_to();
       }
     });
     self.$navTrigger2.addEventListener('click', function (e) {
@@ -279,6 +278,19 @@ $(document).ready(function () {
       scrollTop: top
     }, 1500);
   });
+  $(".scroll").on("click", "a", function (event) {
+    // console.log(this);
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault(); //забираем идентификатор блока с атрибута href
+
+    var id = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top; //анимируем переход на расстояние - top за 1500 мс
+
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
 });
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -308,7 +320,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50217" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56356" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,7 +1,7 @@
 let navigation = {
     // Variables
     $navTrigger: document.querySelector('.nav__trigger', '.bars_trigger'),
-    $navTrigger2: document.querySelector('.menu'),
+    $navTrigger2: document.querySelector('.logo-menu'),
     $nav: document.querySelector('.nav'),
     $navItems: document.querySelectorAll('.nav__item a'),
     $main: document.querySelector('.main'),
@@ -48,7 +48,6 @@ let navigation = {
                 }
             } else {
                 self.closeNavigation();
-                scroll_to();
             }
 
         });
@@ -186,6 +185,21 @@ $(document).ready(function () {
 
             //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top + 100;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({
+            scrollTop: top
+        }, 1500);
+    });
+    $(".scroll").on("click", "a", function (event) {
+        // console.log(this);
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор блока с атрибута href
+        let id = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({
             scrollTop: top

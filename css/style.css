@@ -29,17 +29,16 @@ body {
 
 .logo {
     display: flex;
-
 }
 
-.row-menu {
+.head-logo {
     display: flex;
     justify-content: space-between;
     margin: 0 25px;
     flex-wrap: wrap;
 }
 
-.name {
+.logo-name {
     margin-left: 25px;
     text-transform: uppercase;
     text-decoration: none;
@@ -50,11 +49,11 @@ body {
     letter-spacing: 6px;
 }
 
-.menu {
+.logo-menu {
     margin-top: 10px;
 }
 
-/*SLIDER*/
+/*================= Slider =================*/
 
 .slider {
     background-color: #353535;
@@ -66,7 +65,7 @@ body {
 
 .slider-image {
     background-image: url(../img/office.jpg);
-    opacity: .3;
+    opacity: 0.3;
     width: 100%;
     height: 100%;
     top: 0;
@@ -82,7 +81,7 @@ body {
     top: 0;
     left: 0;
     padding: 0 1% 0 15%;
-    z-index: 9999;
+    z-index: 1000;
 }
 
 .left-arrow img {
@@ -91,7 +90,8 @@ body {
 
 .left-arrow:hover {
     background-color: #696969;
-    opacity: .3;
+    opacity: 0.3;
+    cursor: pointer;
 }
 
 .right-arrow {
@@ -100,7 +100,7 @@ body {
     top: 0;
     right: 0;
     padding: 0 15% 0 1%;
-    z-index: 9999;
+    z-index: 1000;
 }
 
 .right-arrow img {
@@ -109,9 +109,9 @@ body {
 
 .right-arrow:hover {
     background-color: #696969;
-    opacity: .3;
+    opacity: 0.3;
+    cursor: pointer;
 }
-
 
 .cetate {
     display: none;
@@ -120,6 +120,7 @@ body {
     top: 30%;
     right: 10%;
     bottom: 0;
+    z-index: -9000;
 }
 
 .cetate.curry {
@@ -129,7 +130,6 @@ body {
     left: 10%;
     top: 30%;
     right: 10%;
-
 }
 
 .cetate h1 {
@@ -166,6 +166,9 @@ body {
     font-weight: 100;
 }
 
+.scroll {
+    z-index: 9999;
+}
 
 .scroll a {
     margin-top: 370px;
@@ -183,7 +186,9 @@ body {
     color: #fff;
 }
 
-/*About Us*/
+/*================= Slider end =================*/
+
+/*================= About Us =================*/
 
 #about-us {
     background-color: #fff;
@@ -249,7 +254,7 @@ body {
 
 .item h4 {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: rgb(112, 112, 112);
     font-size: 18px;
@@ -257,14 +262,15 @@ body {
 
 .item p {
     margin: 0;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: "Myriad Pro", sans-serif;
     font-weight: 100;
     color: rgb(112, 112, 112);
     font-size: 14px;
     padding: 0 40px;
 }
 
-/*Video*/
+/*================= About Us end =================*/
+/*================= Video block =================*/
 
 .video-block {
     display: flex;
@@ -276,7 +282,7 @@ body {
     background-color: #e64e40;
     text-decoration: none;
     color: #e9dddd;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     padding: 14px 29px;
     font-weight: 1000;
@@ -313,44 +319,42 @@ body {
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
-    /*    не точно*/
 }
 
 .watch-video {
     flex: 0 1 50%;
 }
 
-/*Our Works*/
+/*================= Video block end =================*/
+
+/*================= Our works =================*/
 .our-works__menu {
     margin: 86px auto 36px;
 }
 
 .our-works__menu ul li {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     margin-right: 48px;
     list-style-type: none;
     display: inline-block;
-
 }
 
 .our-works__menu a {
     text-decoration: none;
     font-size: 14px;
     color: rgb(61, 61, 61);
-
-
 }
 
-.ourWorks__element .active {
+.active-works {
     position: relative;
     margin-right: 20px;
     color: rgb(61, 61, 61);
     font-weight: bold;
 }
 
-.ourWorks__element .active::after {
-    content: "";
+.active-works::after {
+    content: '';
     position: absolute;
     width: 98%;
     height: 1px;
@@ -364,7 +368,6 @@ body {
 .our-works__slider {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .our-works__block-large {
@@ -398,7 +401,7 @@ body {
 
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+    background: #ff0000;
 }
 
 /*Our works themes*/
@@ -424,13 +427,14 @@ body {
 }
 
 .themesItems__item span {
-    font-family: 'MgOpenModata', sans-serif;
+    font-family: "MgOpenModata", sans-serif;
     font-size: 25px;
     color: #ececec;
     margin-left: 10px;
 }
 
-/*Who We Are*/
+/*================= Our works end =================*/
+/*================= Who we are =================*/
 
 .who-we-are .title-orange h2 {
     letter-spacing: 7px;
@@ -452,7 +456,7 @@ body {
 }
 
 .person h5 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: rgb(61, 61, 61);
     font-weight: bold;
@@ -461,7 +465,7 @@ body {
 }
 
 .person span {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: rgb(61, 61, 61);
     font-weight: 0;
@@ -479,10 +483,6 @@ body {
     width: 100px;
 }
 
-.person-photo__circle {
-    /* border-radius: ; */
-}
-
 .person__slider input[type="radio"] {
     display: none;
 }
@@ -493,7 +493,6 @@ body {
     background-color: #fff;
     margin-right: 9px;
 }
-
 
 .person__slider input[type="radio"]:checked+label {
     background-color: rgb(142, 129, 129);
@@ -512,7 +511,7 @@ body {
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
-    letter-spacing: 1px
+    letter-spacing: 1px;
 }
 
 .MySkills p {
@@ -536,7 +535,7 @@ body {
 
 .MySkills__field h5 {
     flex: 0 1 20%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: rgb(61, 61, 61);
     font-weight: bold;
@@ -561,7 +560,8 @@ body {
     margin-left: -70px;
 }
 
-/*SomeFeatures*/
+/*================= Who we are end =================*/
+/*================= Some features =================*/
 .SomeFeatures {
     background-color: #171f23;
     color: rgb(246, 246, 246);
@@ -582,7 +582,7 @@ body {
 
 .SomeFeatures__Title h2 {
     font-size: 36px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: rgb(246, 246, 246);
     line-height: 1.2;
     text-transform: uppercase;
@@ -598,7 +598,7 @@ body {
 }
 
 .featuresItem_title {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: 18px;
     color: rgb(246, 246, 246);
@@ -642,7 +642,8 @@ body {
     margin-top: 45px;
 }
 
-/*Blog Post*/
+/*================= Some features end =================*/
+/*================= Blog post =================*/
 
 .postsBlocks {
     display: flex;
@@ -693,7 +694,6 @@ body {
     font-weight: 100;
     color: rgb(121, 121, 121);
     line-height: 1.2;
-
 }
 
 .pBlock__img {
@@ -708,7 +708,9 @@ body {
     height: 100%;
 }
 
-/*Chose plan*/
+/*================= Blog post end =================*/
+
+/*================= Choose plan =================*/
 
 .chosePlan h2::after {
     height: 1px;
@@ -719,7 +721,6 @@ body {
     background-color: #1f282c;
     flex: 0 1 24%;
     margin-top: 10px;
-    /*    width: 24%;*/
 }
 
 .planItem:hover {
@@ -765,7 +766,6 @@ body {
     font-weight: 100;
 }
 
-
 .planItem__btn {
     background-color: #f6744b;
     border-radius: 2px;
@@ -790,7 +790,9 @@ body {
     transition: 0.2s;
 }
 
-/*Get in touch*/
+/*================= Choose plan end =================*/
+
+/*================= Get in touch =================*/
 
 .textBlock {
     display: flex;
@@ -801,7 +803,7 @@ body {
 }
 
 .textBlock h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 14px;
     color: rgb(105, 105, 105);
@@ -886,7 +888,6 @@ input[type="text"]:focus {
     overflow: hidden;
     opacity: 0;
     transition: 2s;
-
 }
 
 .arrow-change {
@@ -906,6 +907,9 @@ input[type="text"]:focus {
     height: 650px;
 }
 
+/*================= Get in touch end =================*/
+
+/*================= Footer =================*/
 footer {
     background-color: #171f23;
 }
@@ -940,3 +944,5 @@ h3 {
 .SomeFeatures__Title {
     text-align: center;
 }
+
+/*================= Footer end =================*/
